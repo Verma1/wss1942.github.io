@@ -1,0 +1,29 @@
+{
+  "name": "react-example-2015",
+  "version": "1.0.0",
+  "description": "React es15 in best practice style.",
+  "main": "webpack.config.js",
+  "devDependencies": {
+    "css-loader": "^0.15.2",
+    "cssesc": "^0.1.0",
+    "http-server": "^0.8.5",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "private": false,
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ositoozy/react-example-es2015.git"
+  },
+  "author": "Oscar Lodriguez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ositoozy/react-example-es2015.git/issues"
+  },
+  "homepage": "https://github.com/Ositoozy/react-example-es2015.git#readme"
+}

@@ -4,9 +4,12 @@
   "description": "React es15 in best practice style.",
   "main": "webpack.config.js",
   "devDependencies": {
+    "browser-sync": "^2.12.7",
     "css-loader": "^0.15.2",
     "cssesc": "^0.1.0",
+    "gulp": "^3.9.1",
     "http-server": "^0.8.5",
+    "raw-loader": "^0.5.1",
     "style-loader": "^0.12.3",
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"

@@ -10,7 +10,7 @@ gulp.task('serve', function() {
     }
   });
 
-  gulp.watch(['*.html', 'stylesheets/*.css', 'js/*.js']).on('change', browserSync.reload);
+  gulp.watch(['*.html', 'stylesheets/*.css', 'js/*.js']).on('change', reload);
 
 
 });

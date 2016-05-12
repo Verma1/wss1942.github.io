@@ -5,7 +5,8 @@
   "main": "webpack.config.js",
   "devDependencies": {
     "browser-sync": "^2.12.7",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "mustache": "^2.2.1"
   },
   "private": false,
   "scripts": {

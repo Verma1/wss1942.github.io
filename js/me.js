@@ -32,6 +32,4 @@ $.fn.each = function(fn) {
     }
 }
 
-
-
 $('#n').hide();

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../stylesheets/normalize.css">
+    <link rel="stylesheet" href="../stylesheets/shop.css">
+    <script src="../js/jquery-1.12.2.js"></script>
+    <title>商城</title>
+</head>
+
+<body>
+    <header>
+        <div class="head-container">
+            <div class="head-top">
+                <div>
+                    <a href="/" class="logo"></a>
+                    <span>好的生活，没那么贵</span>
+                </div>
+                <div class="head-right">
+                    <div class="shop-cart"><a href="" class="shop-cart-link">购物车</a><span>￥</span></div>
+                    <a href="#">login</a>
+                    <span>|</span>
+                    <a href="#">sing in</a>
+                </div>
+            </div>
+        </div>
+        <nav class="head-nav">
+            <div class="nav-list">
+                <a href="" class="head-nav-link head-nav-active">首页1</a>
+                <a href="" class="head-nav-link">首页2</a>
+                <a href="" class="head-nav-link">首页3</a>
+                <a href="" class="head-nav-link">首页4</a>
+            </div>
+        </nav>
+    </header>
+    <!-- 图片轮播 -->
+    <section class="entry">
+        <div id="loop" class="loop">
+            <a data-id="1" href="#" class="loop-in">
+                <img src="img/test1.jpg" alt="1" class="img l-img" />
+            </a>
+            <a data-id="2" href="#" class="loop-out">
+                <img src="img/test5.png" alt="2" class="img l-img" />
+            </a>
+            <a data-id="3" href="#" class="loop-out">
+                <img src="img/test6.png" alt="3" class="img l-img" />
+            </a>
+        </div>
+        <nav id="carouselNav" class="carousel-nav">
+            <span data-id="1"></span>
+            <span data-id="2"></span>
+            <span data-id="3"></span>
+        </nav>
+    </section>
+    <div class="feature">
+        <ul id='hello' class="hello">
+            <li class="item">特色要素1</li>
+            <li class="item">特色要素2</li>
+            <li class="item">特色要素3</li>
+            <li class="item">特色要素4</li>
+        </ul>
+    </div>
+    <!-- 品牌制造商 -->
+    <section class="category">
+        <div class="title">
+            <h1 class="title-name">品牌制造商</h1>
+            <span class="title-describe">工厂直达消费者，剔除品牌溢价</span>
+        </div>
+        <div class="main-product-list">
+            <a href="#" class="main-product">
+                <div class="mask"></div>
+                <div class="name">MUJI制造商</div>
+                <div class="price">29元起</div>
+                <img src="" alt="" class="img" />
+            </a>
+        </div>
+    </section>
+    <!-- 新品首发 -->
+    <!-- 借鉴北科养老官网 -->
+    <!-- 人气推荐 -->
+    <!-- 各个分类 -->
+    <section class="product-list">
+        <div class="product">
+            <div class="title">
+                <h1 class="title-name">居家</h1>
+                <span class="title-describe">回家，放松身心</span>
+            </div>
+            <nav class="nav">
+                <a href="" class="item">
+                    <span class="icon">@</span><span class="name">靠枕</span>
+                </a>
+                <b>/</b>
+                <a href="" class="item">
+                    <span class="icon">#</span><span class="name">拖鞋</span>
+                </a>
+                <b>/</b>
+                <a href="" class="item">
+                    <span class="icon">￥</span><span class="name">毛巾</span>
+                </a>
+                <b>/</b>
+                <a href="" class="item">
+                    <span class="icon">@</span><span class="name">地毯</span>
+                </a>
+            </nav>
+            <ul class="list">
+                <li class="item">
+                    <a href=""><img src="" alt="" class="img"></a>
+                    <span class="name">居家棉麻涤收纳盒</span>
+                    <span class="price">.5</span>
+                    <span class="describe">可折叠收纳盒，拯救你的生活空间</span>
+                </li>
+                <li class="item">
+                    <a href=""><img src="" alt="" class="img"></a>
+                    <span class="name">居家棉麻涤收纳盒</span>
+                    <span class="price">.5</span>
+                    <span class="describe">可折叠收纳盒，拯救你的生活空间</span>
+                </li>
+                <li class="item">
+                    <a href=""><img src="" alt="" class="img"></a>
+                    <span class="name">居家棉麻涤收纳盒</span>
+                    <span class="price">.5</span>
+                    <span class="describe">可折叠收纳盒，拯救你的生活空间</span>
+                </li>
+                <li class="item">
+                    <a href=""><img src="" alt="" class="img"></a>
+                    <span class="name">居家棉麻涤收纳盒</span>
+                    <span class="price">.5</span>
+                    <span class="describe">可折叠收纳盒，拯救你的生活空间</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="customer-service">客服电话</div>
+        <div class="media">微信公众号</div>
+        <div class="app">下载APP</div>
+    </footer>
+</body>
+<script src="../js/shop.js"></script>
+
+</html>

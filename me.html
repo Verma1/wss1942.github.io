@@ -11,6 +11,28 @@
 <body class="page-header">
     <button id="switch">开关</button>
     <span id='n'>王书硕</span>
+	<div>
+		<a href="/js/drag.js">jQuery插件：拖拽</a>
+		<ul id="dragDemo">
+			<li class="item">1</li>
+			<li class="item">2</li>
+			<li class="item">3</li>
+			<li class="item">4</li>
+			<li class="item">5</li>
+			<li class="item">6</li>
+			<li class="item">7</li>
+			<li class="item">8</li>
+		</ul>
+	</div>
 </body>
 <script src="../js/me.js"></script>
+<script src="../js/drag.js"></script>
+<script>
+	$('#dragDemo').dragdrop('li','','',function(obj){
+		console.log(obj.dragId);
+		console.log(obj.targetId);
+		obj.fn()
+		console.log(obj.fn());
+	});
+</script>
 </html>

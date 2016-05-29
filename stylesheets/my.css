@@ -42,3 +42,22 @@ html, body {
 		50%{background-position:80% 20%}
 		100%{background-position:20% 20%}
 	}
+
+.item{
+	width: 50%;
+	height: 50px;
+}
+.item:nth-child(2n){
+	background-color: #c3272b;
+}
+
+.item:nth-child(2n+1){
+	background-color: #177cb0;
+}
+
+.item-drag{
+	transform: translate(-20px,0);
+}
+.item-drop{
+transform: translate(-10px,0);
+}

@@ -25,7 +25,8 @@
      */
     $.fn.dragdrop = function(childType, dragClass, enterClass, ajaxFn) {
         var eleDrag, // 拖拽的对象
-            eleDustbin, // 可放置区域的对象
+            eleDustbin, 
+            eleDrop,
             dragId,
             targetId,
             that = this;
@@ -42,21 +43,25 @@
             dragId = $(this).attr('data-id');
             return true;
         }).delegate(childType, 'drop', function(ev) {
-            targetId = $(this).attr('data-id');
+            eleDrop = $(this);
+            targetId = eleDrop.attr('data-id');
             if (eleDrag && targetId) {
                 that.css('pointer-events', 'none');
                 ajaxFn({
                     dragId: dragId,
-                    targetId: targetId,
+                    droptId: targetId,
                     fn: function() {
                         eleDrag.removeClass(dragClass);
-                        $(this).removeClass(enterClass);
-                        eleDustbin = $(this).html();
-                        $(this).html(eleDrag.html());
+                        eleDrop.removeClass(enterClass);
+                        eleDustbin = eleDrop.html();
+                        eleDrop.html(eleDrag.html());
                         eleDrag.html(eleDustbin);
                         that.css('pointer-events', 'inherit');
-                    }.bind(this)
+                    }
                 });
+            }else{
+                eleDrag.removeClass(dragClass);
+                $(this).removeClass(enterClass);
             }
             targetId = null;
             return false;

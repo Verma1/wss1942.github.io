@@ -1,0 +1,33 @@
+.white-a {
+    color: white;
+    display: inline-block;
+}
+.white-a:hover{
+	animation: Gradient3 .4s ease-in;
+	text-decoration: none;
+}
+
+.item{
+	width: 50%;
+	height: 50px;
+	color: #fff;
+}
+.item:nth-child(2n){
+	background-color: #c3272b;
+}
+
+.item:nth-child(2n+1){
+	background-color: #177cb0;
+}
+
+.item-drag{
+	transform: translate(-20px,0);
+}
+.item-drop{
+transform: translate(-10px,0);
+}
+
+.my-container{
+	height: 1400px;
+}
+

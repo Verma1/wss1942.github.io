@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
-    <title>color</title>
+    <script src="/js/jquery-1.12.2.js"></script>
+    <title>beautiful color</title>
     <style>
     html,
     body {
@@ -16,40 +17,58 @@
         width: 100%;
         height: 100%;
     }
+    
+    .color {
+        width: 20%;
+        height: 25%;
+        display: inline-block;
+        float: left;
+        color: #000;
+        font-weight: 900;
+        position: relative;
+    }
 
-    .color{
-    	width: 20%;
-    	height: 25%;
-    	display: inline-block;
-    	float: left;
-    	color: #000;
+    .color>span,.desc{
+        position: absolute;
+    }
+
+    .value{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%);
+    }
+    .name{
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%);
+    }
+
+    #color,#copy{
+        position: absolute;
+        left:-100px;
+        top:-100px;
+    }
+
+    .no-event{
+        pointer-events:none;
     }
     </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="color" style="background-color: #9d2932;">胭脂#9d2932</div>
-        <div class="color">牙白#efdeb0</div>
-        <div class="color">789262</div>
-        <div class="color">494166</div>
-        <div class="color">a88462</div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
-        <div class="color"></div>
     </div>
+    <script src="/js/color.js"></script>
+    <script src="/js/clipboard.js"></script>
+    <script>
+        var clipboard = new Clipboard('#copy');
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+    </script>
 </body>
 
 </html>

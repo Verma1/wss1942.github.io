@@ -1,9 +1,9 @@
-.jump {
+.white-a {
     color: white;
     display: inline-block;
     /*transition: all .6s ease;*/
 }
-.jump:hover{
+.white-a:hover{
 	/*transform: scale(1.2,1.2);*/
 	animation: Gradient3 .4s ease-in;
 	text-decoration: none;
@@ -46,6 +46,7 @@ html, body {
 .item{
 	width: 50%;
 	height: 50px;
+	color: #fff;
 }
 .item:nth-child(2n){
 	background-color: #c3272b;

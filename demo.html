@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>css3</title>
+</head>
+
+<body>
+    <div>
+        <div class="foo">
+            <div class="contents">
+                <div id="content1" class="content">1</div>
+                <div id="content2" class="content">2</div>
+                <div id="content3" class="content">3</div>
+            </div>
+            <ul class="nav">
+                <li><a href="#content1">1</a></li>
+                <li><a href="#content2">2</a></li>
+                <li><a href="#content3">3</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script>
+	function A(){
+		this.property = true;
+	}
+	A.prototype.getAvalue = function(){
+		return this.property;
+	}
+
+	function B(){
+		this.Bproperty = false;
+	}
+	B.prototype = new A();
+	B.prototype.getBvalue = function(){
+		return this.Bproperty;
+	}
+
+	var instance = new B();
+	alert(instance.getAvalue());
+</script>
+</html>
